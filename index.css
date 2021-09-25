@@ -1,0 +1,159 @@
+:root{
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--paleBlue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  width: auto;
+  background-color: var(--veryPaleBlue);
+  border-radius: 20px;
+}
+
+.image{
+  border-radius: 20px 20px 0 0;
+}
+
+.title{
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  padding: 20px 20px 0;
+}
+
+.details{
+  width: 300px;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px 20px ;
+  color: #aeb0b8;
+  font-weight: 500;
+}
+
+.plan{
+  position: relative;
+  width: 350px;
+  background-color: var(--veryPaleBlue);
+  margin: auto;
+  border-radius: 10px;
+}
+
+.anual{
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.annual{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+
+.price{
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  color: #aeb0b8;
+  font-size: 0.8rem;
+}
+
+.change{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.payment{
+  background-color: var(--brightBlue);
+  width: 330px;
+  border-radius: 10px;
+  color: var(--paleBlue);
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px #382ae1;
+}
+
+.proceed{
+  text-decoration: none;
+  color: var(--paleBlue);
+}
+
+.cancel{
+  padding: 18px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+}
+.cancelOrder{
+  text-decoration: none;
+  color: #aeb0b8;
+  font-weight: 900;
+}
+
+@media(max-width: 375px){
+  body{
+    
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+  
+  .image{
+    width: 300px;
+  }
+
+  .title{
+    width: 300px;
+  }
+
+  .details{
+    width: 290px;
+  }
+
+  .plan{
+    width: 280px;
+    height: auto;
+  }
+
+  
+  .payment{
+    width: 270px;
+  }
+
+  
+
+  .annual{
+    left: 70px;
+  }
+
+  .change{
+    right: 10px;
+  }
+
+}
